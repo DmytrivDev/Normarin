@@ -5,7 +5,7 @@ body {
   background-color: var(--cw);
   color: var(--cm);
   font-size: 1rem;
-  line-height: 1.5;
+  line-height: 1.4;
 }
 
 .overhide {
@@ -22,18 +22,18 @@ body {
 
 .main {
   flex: 1 1 auto;
-  padding-bottom: 4rem;
+  padding-bottom: 7.8125rem;
 }
 
 [class*="__container"] {
-  max-width: 85rem;
+  max-width: 82.5rem;
   padding: 0 2.5em;
   margin: 0 auto;
 }
 
-/* --------- Adaptive desktop (1400px) --------- */
+/* --------- Adaptive desktop (1320px) --------- */
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1320px) {
   html,
   body {
     font-size: 1.16vw;
@@ -53,7 +53,7 @@ body {
   }
 
   .main {
-    padding-bottom: 5rem;
+    padding-bottom: 5.625rem;
   }
 }
 

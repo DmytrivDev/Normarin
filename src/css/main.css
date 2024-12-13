@@ -10,7 +10,6 @@
 @import url('./index/cluster.scss');
 
 /* General */
-@import url('./sections/general/modal.scss');
 
 /* Header */
 @import url('./sections/header/header.scss');
@@ -19,6 +18,33 @@
 
 /* Home */
 @import url('./sections/home/hero.scss');
+
+/* Product */
+/* @import url('./sections/product/product.scss'); */
+
+/* About */
+/* @import url('./sections/about/about.scss'); */
+
+/* Patients */
+/* @import url('./sections/patients/patients.scss'); */
+
+/* Articles */
+/* @import url('./sections/articles/articles.scss'); */
+
+/* Article */
+/* @import url('./sections/article/article.scss'); */
+
+/* Research */
+/* @import url('./sections/research/research.scss'); */
+
+/* Experiment */
+/* @import url('./sections/experiment/experiment.scss'); */
+
+/* Contacts */
+/* @import url('./sections/contacts/contacts.scss'); */
+
+/* Policy */
+/* @import url('./sections/policy/policy.scss'); */
 
 /* Footer */
 @import url('./sections/footer/footer.scss');
