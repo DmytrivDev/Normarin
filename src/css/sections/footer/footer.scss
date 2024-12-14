@@ -71,11 +71,11 @@
       color: var(--cw);
       transition: all 0.15s ease-in;
       &:hover {
-        color: var(--cb2);
+        color: var(--cb3);
       }
     }
     .current-menu-item {
-      color: var(--cb2);
+      color: var(--cb3);
     }
   }
 
@@ -98,7 +98,7 @@
         color: var(--cw);
         transition: all 0.15s ease-in;
         &:hover {
-          color: var(--cb2);
+          color: var(--cb3);
         }
       }
       img {
@@ -199,10 +199,5 @@
         text-align: start;
       }
     }
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .footer {
   }
 }
