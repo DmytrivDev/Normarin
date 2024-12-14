@@ -6,7 +6,7 @@ const accord = document.querySelectorAll('.accord');
 accord?.forEach(list => {
   new Accordion(list, {
     duration: 400,
-    showMultiple: true,
+    showMultiple: false,
   });
 
   const panels = list.querySelectorAll('.ac-panel');
