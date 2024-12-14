@@ -4,6 +4,7 @@
   min-height: 21.5625rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
 
   &__container {
     position: relative;
@@ -39,6 +40,7 @@
   }
 
   .splide {
+    width: 100%;
     max-width: 122.5rem;
     display: flex;
     flex-direction: column;

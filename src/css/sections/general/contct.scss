@@ -1,0 +1,93 @@
+.contactsPage {
+  .contct {
+    padding-top: 1.25rem;
+  }
+}
+
+.contct {
+  &__container {
+    max-width: 71.25rem;
+  }
+
+  &__wrapp {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: start;
+    gap: 0 5.25rem;
+    margin-bottom: 3.125rem;
+  }
+  &__address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem 0;
+    p {
+      text-align: center;
+    }
+    a {
+      width: fit-content;
+      display: flex;
+      align-items: center;
+      gap: 0 0.75rem;
+      font-weight: 600;
+      img {
+        width: 1.375rem;
+        flex-shrink: 0;
+        filter: brightness(0) saturate(100%) invert(5%) sepia(55%)
+          saturate(2643%) hue-rotate(192deg) brightness(99%) contrast(104%);
+      }
+    }
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem 0;
+    li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.75rem 0;
+      padding: 2.5rem;
+      border-radius: 1.25rem;
+      border: 0.0625rem solid var(--cb2);
+      background-color: var(--cb1);
+      & > div {
+        width: 100%;
+        max-width: 16.25rem;
+        p {
+          text-align: center;
+        }
+      }
+    }
+    .title5 {
+      font-size: 1.125rem;
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .contct {
+    &__wrapp {
+      grid-template-columns: 1fr;
+      align-items: stretch;
+      gap: 1.25rem 0;
+      margin-bottom: 2.5rem;
+    }
+    &__address {
+      align-items: start;
+      gap: 0.5rem 0;
+      p {
+        text-align: start;
+        font-size: 0.875rem;
+      }
+    }
+
+    &__cards {
+      gap: 0.75rem 0;
+      li {
+        padding: 1.875rem;
+      }
+    }
+  }
+}

@@ -10,6 +10,7 @@
 @import url('./index/cluster.scss');
 
 /* General */
+@import url('./sections/general/contct.scss');
 
 /* Header */
 @import url('./sections/header/header.scss');
