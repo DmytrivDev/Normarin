@@ -1,0 +1,79 @@
+.assort {
+  &__container {
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+  }
+}
+
+.card-assort {
+  position: relative;
+  flex-basis: calc((100% - 2 * 1.5rem) / 3);
+  min-height: 21.875rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1.25rem;
+  border: 0.0625rem solid var(--cb2);
+  background-color: var(--cb1);
+  padding: 1.875rem;
+  overflow: hidden;
+  transition: all 0.15s ease-in;
+  &:hover {
+    border-color: var(--cb3);
+  }
+
+  &__heading {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 0.9375rem;
+    li {
+      color: var(--cb3);
+      font-size: 0.875rem;
+      padding: 0.25rem 0.75rem;
+      border-radius: 0.625rem;
+      border: 0.0625rem solid var(--cb3);
+    }
+  }
+
+  &__content {
+    position: relative;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin-bottom: 0.9375rem;
+  }
+  &__box {
+    padding: 0.625rem 0 2.8125rem 0;
+    flex-shrink: 0;
+    width: 10.3125rem;
+    .title5 {
+      display: block;
+      width: fit-content;
+      margin-bottom: 0.25rem;
+    }
+  }
+
+  &__img {
+    display: block;
+    flex-shrink: 0;
+    width: 8.75rem;
+    img {
+      width: 100%;
+    }
+  }
+
+  .btn-def {
+    position: absolute;
+    bottom: 1.875rem;
+    left: 1.875rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .assort {
+  }
+}

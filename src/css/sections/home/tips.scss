@@ -22,9 +22,6 @@
       background-image: var(--vectorDefB);
       transition: all 0.15s ease-in;
     }
-    .title5 {
-      font-size: 1.125rem;
-    }
   }
   &__content {
     padding: 0 1.25rem 1.25rem 1.875rem;
@@ -102,9 +99,6 @@
     &__quest {
       padding: 1rem;
       gap: 0 1rem;
-      .title5 {
-        font-size: 1rem;
-      }
     }
     &__content {
       padding: 0 1rem 1rem 1rem;
