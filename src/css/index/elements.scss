@@ -1,9 +1,19 @@
+.pd1 {
+  padding-top: 7.5rem;
+}
+.pd2 {
+  padding-top: 6.25rem;
+}
+
+.heading__sec {
+  margin-bottom: 3.75rem;
+}
+
 .title2 {
   text-align: center;
   font-size: 2.25rem;
   font-weight: 700;
   line-height: 1.2;
-  margin-bottom: 3.75rem;
 }
 .title3 {
   text-align: center;
@@ -71,9 +81,19 @@
 }
 
 @media screen and (max-width: 960px) {
+  .pd1 {
+    padding-top: 3.75rem;
+  }
+  .pd2 {
+    padding-top: 2.5rem;
+  }
+
+  .heading__sec {
+    margin-bottom: 2.5rem;
+  }
+
   .title2 {
     font-size: 1.5rem;
-    margin-bottom: 2.5rem;
   }
   .title3 {
     font-size: 1.5rem;
