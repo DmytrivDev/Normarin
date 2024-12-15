@@ -24,7 +24,7 @@
 @import url('./sections/home/tips.scss');
 
 /* Product */
-/* @import url('./sections/product/product.scss'); */
+@import url('./sections/product/product.scss');
 
 /* About */
 /* @import url('./sections/about/about.scss'); */
