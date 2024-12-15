@@ -51,7 +51,7 @@
     background-size: 1.125rem 1.5rem;
     background-position: center center;
     background-repeat: no-repeat;
-    background-image: var(--vectorBtnW);
+    background-image: var(--vectorBtnWhite);
   }
 
   &.colW {
@@ -59,7 +59,7 @@
     background-color: var(--cw);
     color: var(--cb3);
     &::after {
-      background-image: var(--vectorBtnB);
+      background-image: var(--vectorBtnBlue);
     }
   }
 

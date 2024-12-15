@@ -33,7 +33,7 @@
 /* @import url('./sections/patients/patients.scss'); */
 
 /* Articles */
-/* @import url('./sections/articles/articles.scss'); */
+@import url('./sections/articles/articles.scss');
 
 /* Article */
 /* @import url('./sections/article/article.scss'); */
