@@ -39,10 +39,10 @@
 /* @import url('./sections/article/article.scss'); */
 
 /* Research */
-/* @import url('./sections/research/research.scss'); */
+@import url('./sections/research/research.scss');
 
 /* Experiment */
-/* @import url('./sections/experiment/experiment.scss'); */
+@import url('./sections/experiment/experiment.scss');
 
 /* Contacts */
 /* @import url('./sections/contacts/contacts.scss'); */
