@@ -29,6 +29,7 @@
 
 /* About */
 @import url('./sections/about/about.scss');
+@import url('./sections/about/table.scss');
 
 /* Patients */
 /* @import url('./sections/patients/patients.scss'); */

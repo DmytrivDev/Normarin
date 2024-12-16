@@ -1,0 +1,234 @@
+.table {
+  padding-top: 3.75rem;
+
+  &__container {
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1.25rem;
+    overflow: hidden;
+    border: 0.0625rem solid var(--cb2);
+  }
+
+  &__img {
+    border-left: 0.0625rem solid var(--cb2);
+    padding: 1.25rem 1.875rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div {
+      position: relative;
+      width: 8.75rem;
+      p {
+        position: absolute;
+        z-index: 2;
+        bottom: 0.3125rem;
+        right: -1.8125rem;
+        font-weight: 500;
+        padding: 0.75rem 0.375rem;
+        border-radius: 50%;
+        min-width: 2.875rem;
+        text-align: center;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  &__slider {
+    .splide {
+      border-bottom: 0.0625rem solid var(--cb2);
+      &__list {
+        display: grid !important;
+        grid-template-columns: repeat(4, 1fr);
+      }
+      &__slide {
+        position: relative;
+        left: -0.0625rem;
+        &:nth-child(1) {
+          grid-column: 2 / 3;
+        }
+        &:nth-child(2) {
+          grid-column: 3 / 4;
+        }
+        &:nth-child(3) {
+          grid-column: 4 / 5;
+        }
+      }
+    }
+  }
+
+  &__row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-bottom: 0.0625rem solid var(--cb2);
+    &:last-child {
+      border-bottom: none;
+    }
+    b {
+      font-weight: 600;
+    }
+    span {
+      color: var(--cb3);
+      font-weight: 600;
+      font-size: 1.125rem;
+    }
+    & > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 0.5rem 0;
+      padding: 1.25rem 1.875rem;
+      border-right: 0.0625rem solid var(--cb2);
+
+      &:not(:first-child) {
+        align-items: center;
+        p {
+          text-align: center;
+        }
+      }
+      &:last-child {
+        border-right: none;
+      }
+    }
+    &.column3 {
+      div {
+        &:last-child {
+          grid-column: 3 / 5;
+        }
+      }
+    }
+  }
+
+  &__tagline {
+    padding-top: 1.875rem;
+    font-size: 0.875rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .table {
+    padding-top: 2.25rem;
+
+    &__body {
+      border-radius: 0;
+      border: none;
+      border-bottom: 0.0625rem solid var(--cb2);
+    }
+
+    &__img {
+      border-left: none;
+      padding: 1.25rem 1.875rem 2.25rem 1.875rem;
+      div {
+        width: 160px;
+        p {
+          bottom: -0.625rem;
+          right: -1.25rem;
+          border-radius: 50%;
+        }
+      }
+    }
+
+    &__slider {
+      .splide {
+        &__list {
+          display: flex !important;
+          grid-template-columns: none;
+        }
+        &__slide {
+          left: 0;
+          &:nth-child(1),
+          &:nth-child(2),
+          &:nth-child(3) {
+            grid-column: auto;
+          }
+        }
+
+        &__pagination {
+          display: flex;
+          gap: 0 0.25rem;
+          bottom: 1rem;
+          li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+        &__pagination__page {
+          background-color: var(--cb2);
+          opacity: 0.5;
+          width: 0.25rem;
+          height: 0.25rem;
+          margin: 0;
+          &.is-active {
+            transform: none;
+            background-color: var(--cb2);
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    &__row {
+      grid-template-columns: 43% 57%;
+      font-size: 0.875rem;
+      span {
+        font-size: 0.875rem;
+      }
+      & > div {
+        gap: 0;
+        padding: 1rem 0.375rem;
+        border-right: none;
+
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.15s ease-in;
+        &.isAnimat {
+          opacity: 1;
+          visibility: visible;
+        }
+        &.isChoose {
+          display: flex;
+        }
+        &:nth-child(1) {
+          padding-left: 0;
+          display: flex;
+          opacity: 1;
+          visibility: visible;
+        }
+        &:first-child {
+          border-right: 0.0625rem solid var(--cb2);
+        }
+      }
+      &.column3 {
+        div {
+          &:last-child {
+            grid-column: auto;
+          }
+        }
+      }
+    }
+
+    &__tagline {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem 0;
+      padding-top: 1rem;
+      font-size: 0.75rem;
+    }
+  }
+}
+
+@media screen and (max-width: 675px) {
+  .table {
+    &__img {
+      div {
+        width: 6.875rem;
+      }
+    }
+  }
+}
