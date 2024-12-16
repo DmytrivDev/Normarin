@@ -26,6 +26,7 @@
   }
 
   .title4 {
+    width: fit-content;
     display: flex;
     align-items: end;
     grid-column: 2 / 3;
@@ -34,6 +35,7 @@
   }
 
   &__img {
+    display: block;
     grid-column: 1 / 2;
     grid-row: 1 / 3;
     border-radius: 1.25rem;
