@@ -11,6 +11,7 @@
 
 /* General */
 @import url('./sections/general/contct.scss');
+@import url('./sections/general/details.scss');
 
 /* Header */
 @import url('./sections/header/header.scss');

@@ -10,6 +10,13 @@
 
 .heading__sec {
   margin-bottom: 3.75rem;
+  & > p {
+    color: rgba(0, 17, 36, 0.5);
+    text-align: center;
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-top: 1rem;
+  }
 }
 
 .title2 {
@@ -85,6 +92,10 @@
 
   .heading__sec {
     margin-bottom: 2.5rem;
+    & > p {
+      font-size: 0.875rem;
+      margin-top: 0.5rem;
+    }
   }
 
   .title2 {
