@@ -31,9 +31,19 @@
 @import url('./sections/about/about.scss');
 @import url('./sections/about/table.scss');
 @import url('./sections/about/recomend.scss');
+@import url('./sections/about/bov.scss');
 
-/* Patients */
-/* @import url('./sections/patients/patients.scss'); */
+/* Therapy */
+/* @import url('./sections/therapy/therapy.scss'); */
+
+/* Newborns */
+/* @import url('./sections/newborns/newborns.scss'); */
+
+/* Allergy */
+/* @import url('./sections/allergy/allergy.scss'); */
+
+/* Sinusitis */
+/* @import url('./sections/sinusitis/sinusitis.scss'); */
 
 /* Articles */
 @import url('./sections/articles/articles.scss');
