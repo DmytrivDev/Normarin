@@ -28,7 +28,7 @@
 @import url('./sections/product/product.scss');
 
 /* About */
-/* @import url('./sections/about/about.scss'); */
+@import url('./sections/about/about.scss');
 
 /* Patients */
 /* @import url('./sections/patients/patients.scss'); */
