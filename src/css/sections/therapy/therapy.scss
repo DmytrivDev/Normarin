@@ -1,0 +1,115 @@
+.therapy {
+  &__content {
+    padding-top: 4.375rem;
+    max-width: 51.25rem;
+    margin: 0 auto;
+
+    h4 {
+      color: var(--cb3);
+      text-align: center;
+      font-size: 1.125rem;
+      font-weight: 600;
+      margin-bottom: 2.25rem;
+      padding: 0 3.125rem;
+    }
+  }
+
+  &__img {
+    overflow: hidden;
+    border: 0.0625rem solid var(--cb2);
+    background-color: var(--cb1);
+    border-radius: 1.25rem;
+    height: 38.75rem;
+  }
+
+  &__list {
+    position: relative;
+    z-index: 2;
+    margin-top: 1.5rem;
+    padding: 0 1.875rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 2.1875rem;
+    li {
+      position: relative;
+      flex-basis: calc((100% - 2 * 2.1875rem) / 3);
+      span {
+        position: absolute;
+        top: -0.25rem;
+        left: 50%;
+        transform: translateX(-50%) translateY(-100%);
+        height: 5rem;
+        img {
+          height: 100%;
+          &:last-child {
+            display: none;
+          }
+        }
+      }
+      &:first-child {
+        span {
+          right: 10%;
+          left: auto;
+          transform: translateX(-50%) translateY(-100%);
+        }
+      }
+      &:last-child {
+        span {
+          left: 10%;
+          transform: translateX(50%) translateY(-100%);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .therapy {
+    &__content {
+      padding-top: 2rem;
+
+      h4 {
+        text-align: start;
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+        padding: 0;
+      }
+    }
+
+    &__img {
+      height: auto;
+      padding-top: 100%;
+    }
+
+    &__list {
+      padding: 0;
+      gap: 0 1rem;
+      li {
+        flex-basis: calc((100% - 2 * 1rem) / 3);
+        font-size: 0.75rem;
+        span {
+          top: -0.625rem;
+          height: 1.75rem;
+          img {
+            &:first-child {
+              display: none;
+            }
+            &:last-child {
+              display: block;
+            }
+          }
+        }
+        &:first-child {
+          span {
+            right: 20%;
+          }
+        }
+        &:last-child {
+          span {
+            left: 20%;
+          }
+        }
+      }
+    }
+  }
+}

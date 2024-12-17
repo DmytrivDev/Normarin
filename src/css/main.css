@@ -12,6 +12,7 @@
 /* General */
 @import url('./sections/general/contct.scss');
 @import url('./sections/general/details.scss');
+@import url('./sections/general/patients.scss');
 
 /* Header */
 @import url('./sections/header/header.scss');
@@ -34,31 +35,16 @@
 @import url('./sections/about/bov.scss');
 
 /* Therapy */
-/* @import url('./sections/therapy/therapy.scss'); */
-
-/* Newborns */
-/* @import url('./sections/newborns/newborns.scss'); */
-
-/* Allergy */
-/* @import url('./sections/allergy/allergy.scss'); */
-
-/* Sinusitis */
-/* @import url('./sections/sinusitis/sinusitis.scss'); */
+@import url('./sections/therapy/therapy.scss');
 
 /* Articles */
 @import url('./sections/articles/articles.scss');
-
-/* Article */
-/* @import url('./sections/article/article.scss'); */
 
 /* Research */
 @import url('./sections/research/research.scss');
 
 /* Experiment */
 @import url('./sections/experiment/experiment.scss');
-
-/* Contacts */
-/* @import url('./sections/contacts/contacts.scss'); */
 
 /* Policy */
 /* @import url('./sections/policy/policy.scss'); */
