@@ -5,7 +5,6 @@
 @import url('./settings/default.scss');
 
 @import url('./settings/general.scss');
-@import url('./index/embeded.scss');
 @import url('./index/elements.scss');
 @import url('./index/cluster.scss');
 
@@ -47,7 +46,7 @@
 @import url('./sections/experiment/experiment.scss');
 
 /* Policy */
-/* @import url('./sections/policy/policy.scss'); */
+@import url('./sections/policy/policy.scss');
 
 /* Footer */
 @import url('./sections/footer/footer.scss');
