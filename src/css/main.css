@@ -45,5 +45,8 @@
 /* Policy */
 @import url('./sections/policy/policy.scss');
 
+/* Error */
+@import url('./sections/error/error.scss');
+
 /* Footer */
 @import url('./sections/footer/footer.scss');
