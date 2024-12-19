@@ -183,9 +183,10 @@
             font-weight: 600 !important;
           }
         }
-        .menu-item {
+        & > .menu-item {
           border-bottom: 0.0625rem solid var(--cb3);
-
+        }
+        .menu-item {
           a {
             display: flex;
             width: 100%;
@@ -194,21 +195,21 @@
             color: var(--cb3);
           }
           &.menu-item-has-children {
-            & > .sub-menu {
+            .sub-menu {
               display: none;
               a {
                 padding: 0.5rem 0;
                 font-weight: 400;
                 opacity: 0.7;
               }
-              li {
+              & > li {
                 &:first-child {
-                  a {
+                  & > a {
                     padding-top: 0;
                   }
                 }
                 &:last-child {
-                  a {
+                  & > a {
                     padding-bottom: 1rem;
                   }
                 }
